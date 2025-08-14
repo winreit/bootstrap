@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Акции</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .container-custom {
+            max-width: 1367px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .promo-card {
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            height: 100%;
+            transition: all 0.3s ease;
+            background-color: #F0ead6;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border: none;
+            position: relative;
+            overflow: hidden;
+        }
+        .promo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        .promo-header {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #d82c2c;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .promo-subheader {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .promo-description {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .promo-features {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+        .promo-features li {
+            padding: 5px 0;
+            position: relative;
+            padding-left: 25px;
+        }
+        .promo-features li:before {
+            content: "•";
+            color: #d82c2c;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+        .promo-btn {
+            background-color: #d82c2c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .promo-btn:hover {
+            background-color: #b82424;
+            color: white;
+        }
+        .promo-btn i {
+            margin-left: 8px;
+            font-size: 0.9rem;
+        }
+        .all-promos-btn {
+            margin-bottom: 30px;
+            text-align: right;
+        }
+        .all-promos-btn .btn {
+            border-color: #d82c2c;
+            color: #d82c2c;
+            transition: all 0.3s;
+        }
+        .all-promos-btn .btn:hover {
+            background-color: #FF8c00;
+            color: #d82c2c !important;
+            border-color: #FF8c00;
+        }
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: #222;
+        }
+        .promo-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: #ffc107;
+            color: #333;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.8rem;
+        }
+        .svg-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #FF8c00;
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-weight: 600;
+            transition: all 0.3s;
+            text-decoration: none;
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+        .svg-btn:hover {
+            background-color: #b82424;
+            transform: scale(1.1);
+        }
+        .svg-btn svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+        .page-header {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #000000;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+        .promo-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container container-custom py-5">
+        <h1 class="page-header">Акции</h1>
+        <div class="text-end all-promos-btn">
+            <a href="#" class="btn btn-outline-primary">Все акции</a>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
+                <a href="#" class="text-decoration-none text-dark">
+                    <div class="promo-card">
+                        <img src="img/picture-offers.png" alt="Акция для пенсионеров" class="promo-img">
+                        <div class="promo-header">Скидка 10% для пенсионеров</div>
+                        <p class="promo-description">Новая акция для наших гостей пенсионного возраста</p>
+                        <a href="#" class="svg-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
+                <a href="#" class="text-decoration-none text-dark">
+                    <div class="promo-card">
+                        <img src="img/picture-offers.png" alt="Акция для пенсионеров" class="promo-img">
+                        <div class="promo-header">Скидка 10% для пенсионеров</div>
+                        <p class="promo-description">Новая акция для наших гостей пенсионного возраста</p>
+                        <a href="#" class="svg-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
+                <a href="#" class="text-decoration-none text-dark">
+                    <div class="promo-card">
+                        <img src="img/picture-offers.png" alt="Акция для пенсионеров" class="promo-img">
+                        <div class="promo-header">Скидка 10% для пенсионеров</div>
+                        <p class="promo-description">Новая акция для наших гостей пенсионного возраста</p>
+                        <a href="#" class="svg-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
+                <a href="#" class="text-decoration-none text-dark">
+                    <div class="promo-card">
+                        <img src="img/picture-offers.png" alt="Акция для пенсионеров" class="promo-img">
+                        <div class="promo-header">Скидка 10% для пенсионеров</div>
+                        <p class="promo-description">Новая акция для наших гостей пенсионного возраста</p>
+                        <a href="#" class="svg-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-lg-none">
+                <a href="#" class="text-decoration-none text-dark">
+                    <div class="promo-card">
+                        <img src="img/picture-offers.png" alt="Акция для пенсионеров" class="promo-img">
+                        <div class="promo-header">Скидка 10% для пенсионеров</div>
+                        <p class="promo-description">Новая акция для наших гостей пенсионного возраста</p>
+                        <a href="#" class="svg-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-lg-none">
+                <a href="#" class="text-decoration-none text-dark">
+                    <div class="promo-card">
+                        <img src="img/picture-offers.png" alt="Акция для пенсионеров" class="promo-img">
+                        <div class="promo-header">Скидка 10% для пенсионеров</div>
+                        <p class="promo-description">Новая акция для наших гостей пенсионного возраста</p>
+                        <a href="#" class="svg-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
